@@ -8,3 +8,11 @@ class Solution:
                 if target==nums[i]+nums[j]:
                     return [i,j]
         return []
+    
+    def twoSum2(Para_list, target):
+        try:
+            for idx, val in enumerate(Para_list):
+                if target - val in Para_list:
+                    return(idx, Para_list.index(target - val))
+        except:
+            print("did not find expectd nums")
