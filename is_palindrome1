@@ -1,0 +1,10 @@
+def is_palindrome1(head):
+    return head == head[::-1]
+
+
+
+
+
+if __name__ == '__main__':
+    print(is_palindrome1([1, 3, 3, 1]))
+    print(is_palindrome1([5, 3, 3, 4]))
